@@ -2,3 +2,31 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --main-font-family: 'IBM Plex mono', monospace; /* Шрифты */
+  --main-gap: 10px; /* Отступы */
+  --main-text-size: 18px; /* Размеры текста */
+  --main-line-height: 1.3;
+  --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* Размеры логотипов */
+  --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-bg-color: #00183f; /* Цвета для темной темы (основная) */
+  --main-text-color: #f1b2ce;
+  --main-heading-color: #00183f;
+  --section-heading-color: #ff0070;
+  --header-logo-color: #db00ff;
+  --footer-logo-color: #db00ff;
+  --accent-color: #ff0070;
+  --nav-color: #ff0070;
+  --nav-hover-color: rgb(255 0 112 / 0.4);
+  --decor-size: 25px; /* Декоративные элементы */
+  --decor-border: 1px solid var(--nav-color);
+}
+
+@media (width >= 768px) { /* Планшет и десктоп */
+  :root {
+    --main-gap: 20px;
+    --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
