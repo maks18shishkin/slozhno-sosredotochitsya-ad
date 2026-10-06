@@ -1,5 +1,4 @@
 /* Базовые стили */
-
 .page {
   background-color: var(--main-bg-color);
   background-image: url('../images/cover-image-dark.png');
@@ -17,6 +16,8 @@
   position: relative;
 }
 
+/* Правый верхний угол */
+
 .decorated-zone::before {
   content: '';
   position: absolute;
@@ -27,6 +28,8 @@
   inset-inline-end: var(--main-gap);
   inset-block-start: var(--main-gap);
 }
+
+/* Левый нижний угол */
 
 .decorated-zone::after {
   content: '';
@@ -46,7 +49,7 @@
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
-  block-size: 100vh;
+  block-size: 100vh; /* Высота 100vh это 100% */
   min-block-size: 668px;
   padding: var(--main-gap);
 }
@@ -349,7 +352,7 @@
   .header__theme-menu {
     margin-block-start: 163px;
     position: relative;
-    z-index: 10;
+    z-index: 10; /* Чтобы кнопки были поверх других элементов и работали */
   }
 }
 
